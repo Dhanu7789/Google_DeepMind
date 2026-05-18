@@ -186,17 +186,3 @@ backend/.env
 - Database Support
 
 ---
-
-# 👨‍💻 Author
-
-## Dhanu7789
-
-GitHub:
-
-https://github.com/Dhanu7789
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
