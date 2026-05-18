@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Builder</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="hero">
+    <h1>⚡ AI Website Generator</h1>
+    <p>Create complete websites instantly using AI</p>
+  </div>
+
+  <div class="card">
+
+    <textarea id="prompt"  placeholder="Describe your website idea...">
+    </textarea>
+
+    <div class="button-row">
+      <button class="generate-btn"
+        onclick="generateCode()">
+        Generate Website
+      </button>
+
+      <button class="download-btn"
+        onclick="downloadZip()">
+        Download ZIP
+      </button>
+    </div>
+
+    <h2 class="section-title">HTML</h2>
+
+    <div class="code-container">
+      <button class="copy-btn"
+        onclick="copyCode('html')">
+        Copy
+      </button>
+
+      <pre><code id="html"></code></pre>
+    </div>
+
+    <h2 class="section-title">CSS</h2>
+
+    <div class="code-container">
+      <button class="copy-btn"
+        onclick="copyCode('css')">
+        Copy
+      </button>
+
+      <pre><code id="css"></code></pre>
+    </div>
+
+    <h2 class="section-title">JavaScript</h2>
+
+    <div class="code-container">
+      <button class="copy-btn"
+        onclick="copyCode('js')">
+        Copy
+      </button>
+
+      <pre><code id="js"></code></pre>
+    </div>
+
+    <h2 class="section-title">Live Preview</h2>
+
+    <div class="preview-wrapper">
+      <iframe id="preview"></iframe>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
